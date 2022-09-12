@@ -8,19 +8,19 @@
   </head>
   <body>
     <div id="main">
-      <form>
+      
         <select name="product" id="pro">
           <option value="#">-Select Product-</option>
-          <option value="samsung">Samsung Galaxy</option>
-          <option value="nokia">Nokia S730</option>
-          <option value="xiaomi">Xiaomi Note</option>
-          <option value="motorola">Motorola G10</option>
-          <option value="apple">Apple S12</option>
+          <option value="Samsung Galaxy">Samsung Galaxy</option>
+          <option value="Nokia S730">Nokia S730</option>
+          <option value="Xiaomi Note">Xiaomi Note</option>
+          <option value="Motorola G10">Motorola G10</option>
+          <option value="Apple S12">Apple S12</option>
         </select>
-        <input type="number" placeholder="Quantity" />
-        <button id="add">Add</button>
-        <button id="gb">Generate Bill</button>
-      </form>
+        <input id="val" type="number" placeholder="Quantity" />
+        <button onclick="fun1()" id="add">Add</button>
+        <button onclick="fun2()" id="gb">Generate Bill</button>
+        <div id="table"></divid>
     </div>
     <script src="srp5.js"></script>
     <a href="main.html">Back </a>
