@@ -1,40 +1,92 @@
-var obj1 = {
-  company: "Samsung",
-  model: "Galaxy",
-  memory: "64",
-  price: "15000",
-};
-var obj2 = {
-  Company: "Nokia",
-  model: "S730",
-  memory: "128",
-  price: "22000",
-};
-var obj3 = {
-  company: "Xiaomi",
-  model: "Note",
-  memory: "32",
-  price: "12000",
-};
-var obj4 = {
-  company: "Motorola",
-  model: "G10",
-  memory: "32",
-  price: "15000",
-};
-var obj5 = {
-  company: "Apple",
-  model: "S12",
-  memory: "64",
-  price: "25000",
-};
-var s1 = document.getElementById("click1").value;
-var s2 = document.getElementById("click2").value;
-var ar = [obj1, obj2, obj3, obj4, obj5];
-ar.sort((a,b)=>{
-  return a.company -b.company
-});
-function fun2() {
-  console.log(s1);
-  console.log(s2);
+var ar = [
+  {
+    Company: "Samsung",
+    Model: "Galaxy",
+    Memory: 64,
+    Price: 15000,
+  },
+  {
+    Company: "Nokia",
+    Model: "S730",
+    Memory: 128,
+    Price: 22000,
+  },
+  {
+    Company: "Xiaomi",
+    Model: "Note",
+    Memory: 32,
+    Price: 12000,
+  },
+  {
+    Company: "Motorala",
+    Model: "G10",
+    Memory: 32,
+    Price: 15000,
+  },
+  {
+    Company: "Apple",
+    Model: "S12",
+    Memory: 64,
+    Price: 25000,
+  },
+];
+
+function fun() {
+  var v1 = document.getElementById("tsort").value;
+  var v2 = document.getElementById("tdata").value;
+  if (v1 === "ascending" && v2 === "company") {
+    ar.sort((a, b) =>
+      a.Company > b.Company ? 1 : b.Company > a.Company ? -1 : 0
+    );
+
+   
+  } else if (v1 === "descending" && v2 === "company") {
+    ar.sort((a, b) =>
+      a.Company < b.Company ? 1 : b.Company < a.Company ? -1 : 0
+    );
+   
+  } else if (v1 === "ascending" && v2 === "model") {
+    ar.sort((a, b) => (a.Model > b.Model ? 1 : b.Model > a.Model ? -1 : 0));
+   
+  } else if (v1 === "descending" && v2 === "model") {
+    ar.sort((a, b) => (a.Model < b.Model ? 1 : b.Model < a.Model ? -1 : 0));
+    
+  } else if (v1 === "ascending" && v2 === "memory") {
+    ar.sort(function (a, b) {
+      return a.Memory - b.Memory;
+    });
+   
+  } else if (v1 === "descending" && v2 === "memory") {
+    ar.sort(function (a, b) {
+      return b.Memory - a.Memory;
+    });
+ 
+  } else if (v1 === "ascending" && v2 === "price") {
+    ar.sort(function (a, b) {
+      return a.Price - b.Price;
+    });
+   
+  } else if (v1 === "descending" && v2 === "price") {
+    ar.sort(function (a, b) {
+      return b.Price - a.Price;
+    });
+
+  }
+
+  let table =
+    "<table><tr><th>Company</th><th>Model</th><th>Memory(GB)</th><th>Price(RS)</th></tr>";
+  ar.forEach((val) => {
+    table +=
+      "<tr><td>" +
+      val.Company +
+      "<td>" +
+      val.Model +
+      "</td><td>" +
+      val.Memory +
+      "</td><td>" +
+      val.Price +
+      "</td></tr>";
+  });
+  table += "</table>";
+  document.getElementById("output").innerHTML = table;
 }

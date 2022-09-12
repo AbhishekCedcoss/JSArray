@@ -4,36 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Array Task 3</title>
+    <title>Task 3</title>
   </head>
-
   <body>
-    <div id="main">
-      <h2>Two Drop Down Menu</h2>
-      <div id="dd">
-        <label for="Selelct Field">Selelct Field:</label>
-        <select name="order" id="click1"  >
-          <optgroup label="-Sort-">
-            <option  value="Ascending" >Ascending</option>
-            <option  value="Descending" >Descending</option>
-        </select>
-        <select name="sortby" id="click2"  >
-          <optgroup label="-Sort By-"></optgroup>   
-            <option  value="company" >company</option>
-            <option  value="model" >model</option>
-            <option  value="memory" >memory</option>
-            <option  value="price" >price</option>
-          </select>
-          
-      </div>
-      <button onclick="fun2()">-Sort-</button>
-      <div id="res">
+    <h1>Task 3</h1>
+    <select name="" id="tsort">
+      <option value="sort">-Sort-</option>
+      <option value="ascending">Ascending</option>
+      <option value="descending">Descending</option>
+    </select>
+    <select name="" id="tdata">
+      <option value="sort">-Sort By-</option>
+      <option value="company">Company</option>
+      <option value="model">Model</option>
+      <option value="memory">Memory</option>
+      <option value="price">Price</option>
+    </select>
+    <button onclick="fun()" id="btn">Result</button>
+    <div id="output"></div>
 
-      </div>
-    </div>
-    <br />
-    <br />
     <a href="main.html">Back</a>
-    <script src="srp3.js"></script>
   </body>
+  <script src="srp3.js"></script>
 </html>
