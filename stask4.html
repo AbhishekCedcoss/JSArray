@@ -1,40 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 4</title>
-</head>
-<body>
-    <div id="main">
-        <h3>Add Products Table Form</h3>
-      <form >
-        <div id="spid">
-          <label style="margin-right: 32px" > Company </label><br>
-          <input id="company" type="text" />
-        </div>
-        <div id="spname">
-          <label style="margin-right: 11px" >Model</label><br>
-          <input id="model" type="text" />
-        </div>
-        <div>
-          <label style="margin-right: 15px" >Memory</label>
-          <br>
-          <input id="memory" type="text" /><br>
-          <label style="margin-right: 15px" >Price</label>
-          <br>
-          <input id="price" type="text" />
-        </div>
-        
-      </form>
-      <div style="margin: 10%;" id="res">
+  </head>
+  <body>
+    <h1>Task 4</h1>
+    <form action="#">
+      Company:<input type="text" name="company" id="cmp" /> <br>
+     
+      Model: <input type="text" name="model" id="mdl" /><br>
 
-      </div>
-        <div style="margin: 4px;" id ="res"></div>
-        <button onmouseover="addfun()"  onclick="t1()">ADD</button>
-    </div>
-    <script src="srp4.js"></script>
+      Memory:<input type="text" name="memory" id="mem" /><br>
+      
+     Price : <input type="number" name="price" id="pri" /><br />
+      <input type="button" value="ADD" onclick="fun()" /><br>
+    </form>
+    <p id="output"></p>
     <a href="main.html">Back</a>
-</body>
+  </body>
+  <script src="srp4.js"></script>
 </html>

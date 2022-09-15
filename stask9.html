@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 8</title>
+    <title>Task 9</title>
   </head>
   <body>
     <div id="main">
@@ -17,7 +17,16 @@
           <option value="Motorola G10">Motorola G10</option>
           <option value="Apple S12">Apple S12</option>
         </select>
-        <input id="val" type="number" placeholder="Rate out of 5" />
+        <!-- <input id="val" type="number" min= 0  max= 5 placeholder="Rate out of 5" /> -->
+        <select name="product" id="val">
+          <option value="#">-Rate-</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
         <div id="vals"></div>
         <button onclick="fun1()" >Rate</button>
         
