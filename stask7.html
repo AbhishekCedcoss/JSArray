@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 7</title>
-</head>
-<body>
-    <div id="main"><h2>Form</h2>
-        <div style="padding-top: 20px;" id="src"></div>
-        <select name="product" id="pro">
-            <option value="#">-Select Product-</option>
-            <option value="Samsung Galaxy">Samsung Galaxy</option>
-            <option value="Nokia S730">Nokia S730</option>
-            <option value="Xiaomi Note">Xiaomi Note</option>
-            <option value="Motorola G10">Motorola G10</option>
-            <option value="Apple S12">Apple S12</option>
-          </select>
-          <input id="val" type="number" placeholder="Quantity" />
-          <button onclick="fun1()" id="add">Add</button>
-          <button onclick="fun2()" id="gb">Generate Bill</button>
-          <div id="table"></divid>         
+  </head>
+  <body>
+    <div>
+      <input type="button" onclick="showTable()" value="Show data" />
     </div>
-    <div style="float:left ;" id="final"><h3>Final Quantity</h3><br> <button onclick="fun2()">Final Quantity</button></div>
+    <p id="tableShow"></p>
+    <div style="display: inline" class="addQuantity">
+      <select name="models" id="selModel">
+        <option value="selMod">-Select Model-</option>
+        <option value="Samsung">Samsung Galaxy</option>
+        <option value="Nokia">Nokia S730</option>
+        <option value="Xiaomi">Xiaomi Note</option>
+        <option value="Moto">Motorola G10</option>
+        <option value="Apple">Apple S12</option>
+      </select>
+      <input type="text" id="quantity" placeholder="Qunatity" required>
+      <input type="button" name="add" id="addPro" onclick="addProducts()" value="Add">
+    </div>
+    <p id="showRes"></p>
   <script src="srp7.js"></script>  
   <a href="main.html">Back </a>
 </body>

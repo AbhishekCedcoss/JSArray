@@ -101,7 +101,5 @@ function dd() {
     document.getElementById("st2").innerHTML =
       obj5.company + " :" + obj5.model + " " + obj5.memory + " " + obj5.price;
   }
-  // else{
-  //   document.getElementById("st2").innerHTML="Invalid Input"
-  // }
+  
 }
