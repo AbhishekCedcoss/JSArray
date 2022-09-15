@@ -45,7 +45,7 @@ function fun() {
       Price:pri
   }
   data.push(val);
-  var table="<table><tr><th>Company</th><th>Model</th><th>Memory(GB)</th><th>Price(RS)</th></tr>";
+  var table="<table border ='1'><tr><th>Company</th><th>Model</th><th>Memory(GB)</th><th>Price(RS)</th></tr>";
   data.forEach(v => {
       table+="<tr><td>"+
       v.Company+
