@@ -44,6 +44,18 @@ function fun() {
       Memory:mem,
       Price:pri
   }
+  if (cmp=="") {
+    return alert("Invalid Input") 
+  }
+  if (mdl=="") {
+    return  alert("Invalid Input")
+  }
+  if (mem=="") {
+    return  alert("Invalid Input")
+  }
+  if (pri=="") {
+    return  alert("Invalid Input")
+  }
   data.push(val);
   var table="<table border ='1'><tr><th>Company</th><th>Model</th><th>Memory(GB)</th><th>Price(RS)</th></tr>";
   data.forEach(v => {
